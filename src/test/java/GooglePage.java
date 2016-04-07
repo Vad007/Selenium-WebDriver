@@ -8,7 +8,8 @@ import static com.thoughtworks.selenium.SeleneseTestNgHelper.assertEquals;
 public class GooglePage extends BOP {
     private String findElement = "#lst-ib";
     private String clickElement = "button[name='btnG']";
-    private String elementName ="a[href*=\"0ahUKEwjngaCBl_rLAhXpDpoKHXcxBUoQFggaMAA\"]";
+    private String elementName ="[name=btnG]";
+    private String mailLink =".r a[href*='mail.ru']";
 
     public void navigateToGoogle() {
 
@@ -48,7 +49,7 @@ public class GooglePage extends BOP {
 
     public void goToMail() {
 
-        clickSelector(elementName);
+        clickSelector(mailLink);
     }
 
 }

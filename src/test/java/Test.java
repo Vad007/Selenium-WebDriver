@@ -23,11 +23,11 @@ public class Test extends Driver {
         GooglePage pageGoogle = new GooglePage();
         MailPage pageMail = new MailPage();
 
-
         pageGoogle.navigateToGoogle();
         pageGoogle.verifyGooglePage();
         pageGoogle.inputText("mail");
         pageGoogle.startSearchGoogle();
+        pageGoogle.goToMail();
         pageMail.inputTextUserName("wk007");
         pageMail.inputTextPassword("travers2000");
         pageMail.startSigin();

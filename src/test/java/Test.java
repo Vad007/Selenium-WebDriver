@@ -28,8 +28,8 @@ public class Test extends Driver {
         pageGoogle.inputText("mail");
         pageGoogle.startSearchGoogle();
         pageGoogle.goToMail();
-        pageMail.inputTextUserName("wk007");
-        pageMail.inputTextPassword("travers2000");
+        pageMail.inputTextUserName("wk007");//more pay attention
+        pageMail.inputTextPassword("travers2000");//more pay attention
         pageMail.startSigin();
         if (pageGoogle.verifyMail()) {
 
@@ -39,4 +39,4 @@ public class Test extends Driver {
 
     }
 }
-
+//will make logout process

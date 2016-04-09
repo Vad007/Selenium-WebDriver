@@ -28,14 +28,16 @@ public class Test extends Driver {
         pageGoogle.inputText("mail");
         pageGoogle.startSearchGoogle();
         pageGoogle.goToMail();
-        pageMail.inputTextUserName("wk007");//more pay attention
-        pageMail.inputTextPassword("travers2000");//more pay attention
-        pageMail.startSigin();
         if (pageGoogle.verifyMail()) {
 
             pageGoogle.goToMail();
 
         }
+
+        pageMail.inputTextUserName("wk007");//more pay attention
+        pageMail.inputTextPassword("travers2000");//more pay attention
+        pageMail.startSigin();
+        pageMail.clickLogout();
 
     }
 }

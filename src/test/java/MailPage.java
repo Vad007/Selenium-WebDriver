@@ -5,6 +5,7 @@ public class MailPage extends BOP {
     private String selectorUser ="#mailbox__login";
     private String selectorPassword ="#mailbox__password";
     private String selectorSigin ="#mailbox__auth__button";
+    private String selectorLogOut = "#PH_logoutLink";
 
     public void startSigin () {
 
@@ -24,6 +25,9 @@ public class MailPage extends BOP {
         inputTextUserName(userName);
         inputTextPassword(password);
 
+    }
+    public void clickLogout(){
+        clickSelector(selectorLogOut);
     }
 }
 
